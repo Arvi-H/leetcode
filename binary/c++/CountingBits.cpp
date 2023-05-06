@@ -34,7 +34,7 @@ public:
 
         return numOfBits;
     }
-
+ 
     bitset<8> convert(int n) {
         return bitset<8> (n);
     }
