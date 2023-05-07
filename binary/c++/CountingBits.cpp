@@ -24,7 +24,7 @@ public:
             // Count the number of 1's in the binary rep
             for (int j = 0; j < binaryRep.size(); j++) {
                 if (binaryRep.at(j) == '1') {
-                    count++;
+                    count++; 
                 }
             }
 
