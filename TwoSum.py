@@ -14,6 +14,6 @@ class Solution(object):
 
 # Example input
 nums = [3, 2, 4]
-target = 6g
+target = 6
 
 print("Indices of the two numbers:", Solution().twoSum(nums, target))
