@@ -9,7 +9,7 @@ class Solution(object):
         prev = None
         curr = head
 
-        while curr is not None:
+        while(curr):
             # Reverse Direction
             next = curr.next
             curr.next = prev
