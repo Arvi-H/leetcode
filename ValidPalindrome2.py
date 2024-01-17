@@ -11,7 +11,7 @@ class Solution(object):
         while left < right:
             if s[left] != s[right]:
                 one_deleted_left = s[left+1:right+1]
-                one_deleted_right = s[left:right] 
+                one_deleted_right = s[left:right]  
                 return one_deleted_left == one_deleted_left[::-1] or one_deleted_right == one_deleted_right[::-1]  
             
             # Increment
@@ -22,7 +22,6 @@ class Solution(object):
 
 sol = Solution()
 
-# Test Case 1: Normal palindrome
-s1 = "A man, a plan, a canal, Panama!"
-result1 = sol.validPalindrome(s1)
-print(result1)  # Output: True
+# Test case: "abca"
+result = sol.validPalindrome("deifggied")
+print(result)  
