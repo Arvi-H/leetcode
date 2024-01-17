@@ -10,9 +10,9 @@ class Solution(object):
         
         while left < right:
             if s[left] != s[right]:
-                one_deleted_left = s[left+1:right+1]
-                one_deleted_right = s[left:right]  
-                return one_deleted_left == one_deleted_left[::-1] or one_deleted_right == one_deleted_right[::-1]  
+                deleteLeftChar = s[left+1:right+1] 
+                deleteRightChar = s[left:right]  
+                return deleteLeftChar == deleteLeftChar[::-1] or deleteRightChar == deleteRightChar[::-1]  
             
             # Increment
             left += 1
@@ -23,5 +23,5 @@ class Solution(object):
 sol = Solution()
 
 # Test case: "abca"
-result = sol.validPalindrome("deifggied")
+result = sol.validPalindrome("aaaaba")
 print(result)  
