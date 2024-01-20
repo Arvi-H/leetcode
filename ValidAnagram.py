@@ -22,3 +22,5 @@ def isAnagram(s, t):
             return False
         
     return True 
+
+# you can also do return sorted(s) == sorted(t)
