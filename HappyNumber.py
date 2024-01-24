@@ -6,7 +6,7 @@ class Solution(object):
         while n not in trackElements:
             trackElements.add(n)
             
-            n = self.squareNum(self, n)
+            n = self.squareNum(n)
             
             if n == 1:
                 return True
@@ -14,4 +14,12 @@ class Solution(object):
         return False
         
     def squareNum(self, n):
-       return sum(int(i)**2 for i in str(n))
+        sum = 0
+       
+        while n:
+            digit = n % 10
+            digit = digit ** 2
+            sum += digit
+            n = n // 10
+            
+        return sum 
