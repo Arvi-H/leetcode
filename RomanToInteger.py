@@ -3,10 +3,11 @@ class Solution(object):
         intValue = 0
         valueMap = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         
-        # LVIII
-        for i in s: 
-                
-            intValue += valueMap[i]
+        for i in range(len(s)): 
+            if i + 1 < len(s) and valueMap[s[i]] < valueMap[s[i + 1]]:
+                intValue -= valueMap[s[i]]
+            else:
+                intValue += valueMap[s[i]]
         
         return intValue
             
