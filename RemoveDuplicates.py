@@ -8,4 +8,4 @@ def removeDuplicates(nums):
             nums[k] = nums[i]
     return k + 1
     
-print(removeDuplicates([1,1,2]))
+print(removeDuplicates([1,1,2])) 
