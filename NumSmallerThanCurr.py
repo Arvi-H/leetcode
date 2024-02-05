@@ -9,4 +9,4 @@ class Solution(object):
                 
         return [myMap[num] for num in nums]           
         
-print(Solution().smallerNumbersThanCurrent([1, 2, 2, 3, 9])) 
+print(Solution().smallerNumbersThanCurrent([1, 2, 2, 3, 8])) 
